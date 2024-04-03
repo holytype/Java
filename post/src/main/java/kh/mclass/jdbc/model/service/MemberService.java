@@ -1,39 +1,46 @@
 package kh.mclass.jdbc.model.service;
 
+import java.sql.Connection;
 import java.util.List;
 
 import kh.mclass.jdbc.model.dao.MemberDao;
+import static kh.mclass.jdbc.model.common.JdbcTemplate.*;
 
 public class MemberService {
 	private MemberDao memberDao = new MemberDao();
 	
 	public List<MemberDao> selectAllList() {
-		//conn
-		
+		Connection conn = getConnection(true);
+		//memberDao.selectAllList(conn);
+		close(conn);
 		return null;
 	}
 	
 	public List<MemberDao> selectOne() {
-		//conn
-		
+		Connection conn = getConnection(true);
+		//memberDao.selectAllList(conn);
+		close(conn);
 		return null;
 	}
 	
 	public List<MemberDao> insert() {
-		//conn
-		
+		Connection conn = getConnection(true);
+		//memberDao.selectAllList(conn);
+		close(conn);
 		return null;
 	}
 	
 	public List<MemberDao> update() {
-		//conn
-		
+		Connection conn = getConnection(true);
+		//memberDao.selectAllList(conn);
+		close(conn);
 		return null;
 	}
 	
 	public List<MemberDao> delete() {
-		//conn
-		
+		Connection conn = getConnection(true);
+		//memberDao.selectAllList(conn);
+		close(conn);
 		return null;
 	}
 }
